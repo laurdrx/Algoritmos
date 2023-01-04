@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+
+int main(){
+    struct data {
+    int dia;
+    char mes[30];
+    int ano;
+};
+   struct Pessoa {
+   char nome[20];
+   char telefone[20];
+   char endereco[20];
+   struct data Nascimento;
+   };
+
+   struct Pessoa p1;
+
+   strcpy(p1.nome,"Maria");
+   strcpy(p1.telefone,"12345");
+   strcpy(p1.endereco,"Av Evandro");
+
+   p1.Nascimento.dia=4;
+   strcpy(p1.Nascimento.mes,"Julho");
+   p1.Nascimento.ano=2006;
+   {
+       printf("Nome:%s",p1.nome);
+       printf("\t Telefone:%s",p1.telefone);
+       printf("\t Endereco:%s",p1.endereco);
+       printf("\t Data de Nascimento:%s",p1.Nascimento);
+       printf("\t Dia:%s",p1.Nascimento.dia);
+       printf("\t Mes:%s",p1.Nascimento.mes);
+       printf("\t Ano:%s",p1.Nascimento.ano );
+   }
+}
