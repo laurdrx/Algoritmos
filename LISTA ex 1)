@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+struct Endereco{
+
+    char rua[20];
+    int andar;
+
+};
+
+struct Pessoa {
+
+    char nome[25];
+    char numero[20];
+    struct Endereco endereco;
+};
+
+
+int main(){
+
+    struct Pessoa pessoas[5];
+    int i;
+    for(i=0;i<5;i++)
+
+    {
+
+
+        printf ("\n Digite a rua:");
+        scanf("%s",pessoas[i].endereco.rua);
+
+        printf("\n Digite o andar:");
+        scanf("%d", &pessoas[i].endereco.andar);
+
+        printf("\n Digite o nome:");
+        scanf("%s",pessoas[i].nome);
+
+}       for (i=0;i<5;i++){
+
+        printf("Rua: %s",pessoas[i].endereco.rua);
+        printf("\t \t Andar : %d",pessoas[i].endereco.andar);
+        printf ("Nome:%s",pessoas[i].nome);
+
+}
+}
+
+
+
+
