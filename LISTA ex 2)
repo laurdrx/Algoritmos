@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+
+#define turma 4
+
+struct Aluno{
+
+    char nome[20];
+    int  nota1;
+    int  nota2;
+
+};
+
+int main()
+      int media;
+
+      {
+     for(int i = 0; i<trm; i++){
+        printf("Digite o nome")
+
+
+     }
+
+
+    return  0;
+}
